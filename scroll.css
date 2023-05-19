@@ -1,0 +1,32 @@
+body {
+    background: rgb(162, 233, 181)
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 20px;
+    width: 400px;
+    height: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.1;
+    transform: scale(0.5);
+    transition: 0.3s;
+}
+
+.card.show {
+    opacity: 1;
+    transform: scale(1);
+}
